@@ -5,16 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>binarymash.cloud.shopper</groupId>
-        <artifactId>order-domain</artifactId>
+        <artifactId>customer-service</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>order-domain-core</artifactId>
+    <artifactId>customer-application</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>binarymash.cloud.shopper</groupId>
-            <artifactId>common-domain</artifactId>
+            <artifactId>customer-application-service</artifactId>
         </dependency>
     </dependencies>
 

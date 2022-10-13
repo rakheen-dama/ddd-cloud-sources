@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>binarymash.cloud.shopper</groupId>
-        <artifactId>supplier-service</artifactId>
+        <artifactId>customer-service</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>supplier-container</artifactId>
+    <artifactId>customer-container</artifactId>
 
     <dependencies>
         <dependency>
@@ -18,23 +18,19 @@
         </dependency>
         <dependency>
             <groupId>binarymash.cloud.shopper</groupId>
-            <artifactId>supplier-domain-core</artifactId>
+            <artifactId>customer-domain-core</artifactId>
         </dependency>
         <dependency>
             <groupId>binarymash.cloud.shopper</groupId>
-            <artifactId>supplier-application-service</artifactId>
+            <artifactId>customer-application-service</artifactId>
         </dependency>
         <dependency>
             <groupId>binarymash.cloud.shopper</groupId>
-            <artifactId>supplier-application</artifactId>
+            <artifactId>customer-data</artifactId>
         </dependency>
         <dependency>
             <groupId>binarymash.cloud.shopper</groupId>
-            <artifactId>supplier-data</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>binarymash.cloud.shopper</groupId>
-            <artifactId>supplier-messaging</artifactId>
+            <artifactId>customer-messaging</artifactId>
         </dependency>
     </dependencies>
 
@@ -45,7 +41,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>${project.groupId}/supplier.service:${project.version}</name>
+                        <name>${project.groupId}/customer.service:${project.version}</name>
                     </image>
                 </configuration>
                 <executions>

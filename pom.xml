@@ -23,6 +23,7 @@
         <module>dispatch-service</module>
         <module>infrastructure</module>
         <module>common</module>
+        <module>customer-service</module>
     </modules>
 
     <properties>
@@ -114,6 +115,33 @@
             <dependency>
                 <groupId>binarymash.cloud.shopper</groupId>
                 <artifactId>payment-messaging</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <!-- Customer -->
+            <dependency>
+                <groupId>binarymash.cloud.shopper</groupId>
+                <artifactId>customer-domain-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>binarymash.cloud.shopper</groupId>
+                <artifactId>customer-application-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>binarymash.cloud.shopper</groupId>
+                <artifactId>customer-application</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>binarymash.cloud.shopper</groupId>
+                <artifactId>customer-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>binarymash.cloud.shopper</groupId>
+                <artifactId>customer-messaging</artifactId>
                 <version>${project.version}</version>
             </dependency>
 

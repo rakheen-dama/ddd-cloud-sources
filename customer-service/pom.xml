@@ -5,17 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>binarymash.cloud.shopper</groupId>
-        <artifactId>order-domain</artifactId>
+        <artifactId>ddd-cloud-sources</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>order-domain-core</artifactId>
-
-    <dependencies>
-        <dependency>
-            <groupId>binarymash.cloud.shopper</groupId>
-            <artifactId>common-domain</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>customer-service</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>customer-domain</module>
+        <module>customer-application</module>
+        <module>customer-data</module>
+        <module>customer-messaging</module>
+        <module>customer-container</module>
+    </modules>
 
 </project>
