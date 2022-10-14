@@ -1,2 +1,10 @@
-package binarymash.cloud.shopper.domain.valueobject;public class CustomerId {
+package binarymash.cloud.shopper.domain.valueobject;
+
+import java.util.UUID;
+
+public class CustomerId extends BaseId<UUID> {
+
+    public CustomerId(UUID value) {
+        super(value);
+    }
 }

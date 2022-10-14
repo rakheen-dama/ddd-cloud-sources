@@ -5,7 +5,7 @@ import java.math.RoundingMode;
 
 public class Money {
 
-    private static final Money ZERO = new Money(java.math.BigDecimal.ZERO);
+    public static final Money ZERO = new Money(java.math.BigDecimal.ZERO);
     private final BigDecimal amount;
 
     public Money(BigDecimal amount) {

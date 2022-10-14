@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from external repository ie not a local parent-->
     </parent>
 
-    <groupId>binarymash.cloud.shopper</groupId>
+    <groupId>0</groupId>
     <artifactId>ddd-cloud-sources</artifactId>
     <version>1.0-SNAPSHOT</version>
 
