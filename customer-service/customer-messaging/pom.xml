@@ -11,4 +11,11 @@
 
     <artifactId>customer-messaging</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>binarymash.cloud.shopper</groupId>
+            <artifactId>customer-application-service</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
