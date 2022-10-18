@@ -16,6 +16,14 @@
             <groupId>binarymash.cloud.shopper</groupId>
             <artifactId>customer-application-service</artifactId>
         </dependency>
+        <dependency>
+            <groupId>binarymash.cloud.shopper</groupId>
+            <artifactId>kafka-producer</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>binarymash.cloud.shopper</groupId>
+            <artifactId>kafka-model</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
