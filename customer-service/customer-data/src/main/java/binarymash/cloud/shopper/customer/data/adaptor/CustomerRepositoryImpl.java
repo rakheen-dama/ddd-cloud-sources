@@ -1,5 +1,6 @@
 package binarymash.cloud.shopper.customer.data.adaptor;
 
+import binarymash.cloud.shopper.customer.data.entity.CustomerEntity;
 import binarymash.cloud.shopper.customer.data.mapper.CustomerDataAccessMapper;
 import binarymash.cloud.shopper.customer.data.repository.CustomerJpaRepository;
 import binarymash.cloud.shopper.customer.domain.entity.Customer;
@@ -16,6 +17,7 @@ public class CustomerRepositoryImpl implements CustomerRepository {
 
     @Override
     public Customer createCustomer(final Customer customer) {
-        return mapper.customerEntityToCustomer(customerJpaRepository.save(mapper.customerToCustomerEntity(customer)));
+        var customerEntity = customerJpaRepository.save(mapper.customerToCustomerEntity(customer));
+        return mapper.customerEntityToCustomer(customerEntity);
     }
 }
