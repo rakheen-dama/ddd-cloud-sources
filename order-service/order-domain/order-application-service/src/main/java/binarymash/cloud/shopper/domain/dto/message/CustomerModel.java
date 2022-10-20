@@ -7,10 +7,4 @@ import lombok.Getter;
 @Getter
 @Builder
 @AllArgsConstructor
-public class CustomerModel {
-
-    private String id;
-    private String username;
-    private String firstName;
-    private String lastName;
-}
+public record CustomerModel(String id, String username, String firstName, String lastName) { }
