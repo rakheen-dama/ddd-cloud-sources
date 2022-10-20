@@ -36,7 +36,7 @@ public class Supplier extends AggregateRoot<SupplierId> {
         private Builder() {
         }
 
-        public Builder restaurantId(SupplierId val) {
+        public Builder supplierId(SupplierId val) {
             supplierId = val;
             return this;
         }
