@@ -11,7 +11,6 @@ import binarymash.cloud.shopper.order.domain.event.OrderPaidEvent;
 import binarymash.cloud.shopper.order.domain.exception.OrderDomainException;
 import lombok.extern.slf4j.Slf4j;
 
-import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.Map;

@@ -12,11 +12,11 @@ import java.util.UUID;
 
 public class Order extends AggregateRoot<OrderId> {
 
-    private final CustomerId customerId;
-    private final SupplierId supplierId;
-    private final StreetAddress deliveryAddress;
-    private final Money price;
-    private final List<OrderItem> items;
+    private CustomerId customerId;
+    private SupplierId supplierId;
+    private StreetAddress deliveryAddress;
+    private Money price;
+    private List<OrderItem> items;
 
     private TrackingId trackingId;
     private OrderStatus orderStatus;
@@ -124,6 +124,10 @@ public class Order extends AggregateRoot<OrderId> {
         failureMessages = builder.failureMessages;
     }
 
+    public static Builder builder() {
+        return new Builder();
+    }
+
     public CustomerId getCustomerId() {
         return customerId;
     }
@@ -158,25 +162,45 @@ public class Order extends AggregateRoot<OrderId> {
 
     public static final class Builder {
         private OrderId orderId;
-        private final CustomerId customerId;
-        private final SupplierId supplierId;
-        private final StreetAddress deliveryAddress;
-        private final Money price;
-        private final List<OrderItem> items;
+        private CustomerId customerId;
+        private SupplierId supplierId;
+        private StreetAddress deliveryAddress;
+        private Money price;
+        private List<OrderItem> items;
         private TrackingId trackingId;
         private OrderStatus orderStatus;
         private List<String> failureMessages;
 
-        public Builder(CustomerId customerId, SupplierId supplierId, StreetAddress deliveryAddress, Money price, List<OrderItem> items) {
-            this.customerId = customerId;
-            this.supplierId = supplierId;
-            this.deliveryAddress = deliveryAddress;
-            this.price = price;
-            this.items = items;
+        private Builder() {
         }
 
-        public Builder id(OrderId val) {
+        public Builder orderId(OrderId val) {
             orderId = val;
+            return this;
+        }
+
+        public Builder customerId(CustomerId val) {
+            customerId = val;
+            return this;
+        }
+
+        public Builder supplierId(SupplierId val) {
+            supplierId = val;
+            return this;
+        }
+
+        public Builder deliveryAddress(StreetAddress val) {
+            deliveryAddress = val;
+            return this;
+        }
+
+        public Builder price(Money val) {
+            price = val;
+            return this;
+        }
+
+        public Builder items(List<OrderItem> val) {
+            items = val;
             return this;
         }
 
